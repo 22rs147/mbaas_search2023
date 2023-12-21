@@ -101,29 +101,29 @@
 </head>
 
 <body>
-    <h1>yugioh search</h1>
+    <h1>遊戯王　カード検索</h1>
     <div>
-        <label for="name">name:</label>
+        <label for="name">カード名:</label>
         <input id="name" type="text" placeholder="monster name">
     </div>
     <div>
-        <label for="level">level:</label>
+        <label for="level">レベル:</label>
         <input id="level" type="number" placeholder="monster level">
     </div>
     <div>
-        <label for="attribute">attribute:</label>
+        <label for="attribute">属性:</label>
         <input id="attribute" type="text" placeholder="monster attribute">
     </div>
     <div id="button">
-        <button class="btn" onclick="fetchAll()">Fetch All</button>
-        <button class="btn" onclick="searchName()">Name</button>
-        <button class="btn" onclick="searchAttribute()">Attribute</button>
+        <button class="btn" onclick="fetchAll()">全表示</button>
+        <button class="btn" onclick="searchName()">名前検索</button>
+        <button class="btn" onclick="searchAttribute()">属性検索</button>
         <br>
-        <button class="btn" onclick="searchLevelLT()">Level &lt</button>
-        <button class="btn" onclick="searchLevel()">Level</button>
-        <button class="btn" onclick="searchLevelGT()">Level &gt</button>
+        <button class="btn" onclick="searchLevelLT()">レベル &lt</button>
+        <button class="btn" onclick="searchLevel()">レベル</button>
+        <button class="btn" onclick="searchLevelGT()">レベル &gt</button>
     </div>
-    <div id="message">message area</div>
+    <div id="message"></div>
 </body>
 
 </html>
