@@ -67,6 +67,17 @@
                 })
         }
 
+        function searchAttribute() {
+            let attribute = $("#attribute").val();
+            let TestDataClass = ncmb.DataStore(db);
+            TestDataClass
+                .equalTo("attribute", attribute)
+                .fetchAll()
+                .then(function(results) {
+                    showResults(results);
+                })
+        }
+
 
         function showResults(results) {
             // テーブルのヘッダを生成
@@ -99,9 +110,14 @@
         <label for="level">level:</label>
         <input id="level" type="number" placeholder="monster level">
     </div>
+    <div>
+        <label for="attribute">attribute:</label>
+        <input id="attribute" type="text" placeholder="monster attribute">
+    </div>
     <div id="button">
         <button class="btn" onclick="fetchAll()">Fetch All</button>
         <button class="btn" onclick="searchName()">Name</button>
+        <button class="btn" onclick="searchAttribute()">Attribute</button>
         <br>
         <button class="btn" onclick="searchLevelLT()">Level &lt</button>
         <button class="btn" onclick="searchLevel()">Level</button>
