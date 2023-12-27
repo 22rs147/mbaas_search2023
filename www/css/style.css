@@ -33,9 +33,20 @@ input {
   color: white;
   background-color: blue;
 }
-
-#message {
+/*
+.hbtn {
   margin-top: 10px;
+  margin-bottom: 0px;
+  font-size: 12pt;
+  height: 4ex;
+  width: 2.5em;
+  border-radius: 10px;
+  color: white;
+  background-color: blue;
+}
+*/
+#message {
+  margin-top: 50px;
   border-style: solid;
   border-color: grey;
   color: white;
