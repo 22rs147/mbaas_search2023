@@ -22,6 +22,7 @@
 
                         let soko=1;
                         let n = 0;
+                        //let sokobtnold = LOW;
 
 
                         function fetchAll() {
@@ -143,12 +144,7 @@
                         }
 
                         function searchSoko() {
-                            if(adorder==s){
-                                soko=1;
-                            }
-                            if(adorder==k){
-                                soko=0;
-                            }
+                                soko = -soko; 
                         }
         </script>
     </head>
@@ -175,15 +171,6 @@
             <button class="btn" onclick="searchLevelLT()">レベル &lt</button>
             <button class="btn" onclick="searchLevel()">レベル</button>
             <button class="btn" onclick="searchLevelGT()">レベル &gt</button>
-            <input type="radio" 
-                name="adorder"
-                value="s"
-                checked
-            />
-            <label for="Choice1">昇順</label>
-
-            <input type="radio" name="adorder" value="k" />
-            <label for="Choice2">降順</label>
 
             <button class="btn" onclick="searchSoko()">昇順降順</button>
             
