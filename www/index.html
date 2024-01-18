@@ -21,7 +21,6 @@
             const db = "m";
 
             let So=1;
-            let n = 0;
 
 
             function fetchAll() {
@@ -133,20 +132,16 @@
                 }
 
                 }
-
-
-
-
                 // テーブルのテイラを生成
                 msg += "</table>";
                 $("#message").html(msg);
             }
 
-            //昇順降順が押されたときの処理
+            //昇順が押されたときの処理
             function searchSo() {
                 So = 1;
             }
-
+            //降順が押されたときの処理
             function searchKo() {
                 So = 0;
             }
