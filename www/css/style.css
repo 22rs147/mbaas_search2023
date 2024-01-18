@@ -19,6 +19,8 @@ label {
 
 input {
   width: 75%;
+  height: 3ex;
+  margin-bottom: 4px;
 }
 
 #button {
